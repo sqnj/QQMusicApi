@@ -29,7 +29,6 @@
     "express": "~4.16.1",
     "fs": "^0.0.1-security",
     "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
     "js-base64": "^2.5.1",
     "jsonfile": "^5.0.0",
     "moment": "^2.24.0",
