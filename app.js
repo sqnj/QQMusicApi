@@ -13,6 +13,13 @@ const Request = require('./util/request');
 const GlobalCookie = require('./util/globalCookie');
 
 const app = express();
+// === 插入这段代码开始 ===
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
+// === 插入这段代码结束 ===
 const dataHandle = new DataStatistics();
 const feedback = new Feedback();
 const cache = new Cache();
